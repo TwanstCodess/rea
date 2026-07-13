@@ -49,7 +49,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node api.js && tsc -p tsconfig.build.json",
     "check": "npm run typecheck && npm run lint && npm run format:check && npm test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -59,7 +59,7 @@
     "lint:dead": "knip",
     "jscpd": "jscpd src/ tests/",
     "scan:todos": "node scripts/scan-todos.mjs",
-    "start": "node dist/main.js",
+    "start": "node api.js && node dist/main.js",
     "pretest": "npm run build",
     "postinstall": "node scripts/prepare-node-pty.mjs",
     "test": "vitest run",
