@@ -17,7 +17,7 @@ env/
 
 # IDE
 .idea/
-.vscode/
+temp_auto_push.bat
 *.swp
 *.swo
 *~
@@ -37,3 +37,5 @@ coverage/
 # OS
 .DS_Store
 Thumbs.db
+.gitignore
+branch_structure.json
