@@ -18,8 +18,8 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
+temp_auto_push.bat
 *.swo
 *~
 
@@ -37,7 +37,10 @@ coverage/
 .vitest-reports/
 test-results.xml
 .turbo/
+.cache/
 
 # OS
 .DS_Store
 Thumbs.db
+.gitignore
+branch_structure.json
