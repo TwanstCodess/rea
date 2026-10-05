@@ -18,8 +18,8 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
+temp_auto_push.bat
 *.swo
 *~
 
@@ -42,3 +42,5 @@ test-results.xml
 # OS
 .DS_Store
 Thumbs.db
+.gitignore
+branch_structure.json
