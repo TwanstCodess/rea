@@ -17,11 +17,11 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
 
+temp_auto_push.bat
 # Local agent tooling
 .codex/
 .devin/
@@ -45,3 +45,5 @@ Thumbs.db
 
 # Local reference sources and analysis artifacts
 /_reference/
+.gitignore
+branch_structure.json
