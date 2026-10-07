@@ -17,12 +17,12 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
 
 # Local agent tooling
+temp_auto_push.bat
 .codex/
 .devin/
 .factory/
@@ -48,3 +48,5 @@ Thumbs.db
 
 # Generated website download
 /website/public/examples/notes-example.zip
+.gitignore
+branch_structure.json
