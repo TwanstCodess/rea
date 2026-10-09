@@ -17,7 +17,6 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
@@ -31,6 +30,7 @@ codedb.snapshot
 # Testing
 .pytest_cache/
 htmlcov/
+temp_auto_push.bat
 .coverage
 coverage/
 .vitest-reports/
@@ -64,3 +64,5 @@ Thumbs.db
 /docs/public/product-catalog.json
 /docs/verification/managed-conformance-manifest.json
 /docs/verification/managed-conformance-ledger.json
+.gitignore
+branch_structure.json
