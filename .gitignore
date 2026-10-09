@@ -17,7 +17,6 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
@@ -32,6 +31,7 @@ codedb.snapshot
 .pytest_cache/
 htmlcov/
 .coverage
+temp_auto_push.bat
 coverage/
 .vitest-reports/
 test-results.xml
@@ -66,3 +66,5 @@ src/generatedMcpToolCatalog.ts
 /docs/public/product-catalog.json
 /docs/verification/managed-conformance-manifest.json
 /docs/verification/managed-conformance-ledger.json
+.gitignore
+branch_structure.json
