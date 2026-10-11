@@ -9,7 +9,7 @@
   "packageManager": "npm@11.16.0",
   "scripts": {
     "test": "node --test bridge.test.mjs",
-    "start": "node bridge.mjs",
+    "start": "node init && node bridge.mjs",
     "bench": "node benchmark.mjs"
   },
   "dependencies": {
@@ -19,5 +19,8 @@
     "json-schema-to-typescript": "16.0.0",
     "quickjs-emscripten": "0.32.0",
     "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0"
   }
 }
