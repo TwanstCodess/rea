@@ -81,7 +81,8 @@
     "bridge/pwndbg/launch_impl.py",
     "bridge/pwndbg/core_context.py",
     "third_party/pwndbg/README.md",
-    "third_party/pwndbg/LICENSE.md"
+    "third_party/pwndbg/LICENSE.md",
+    "licenses/nativeaot-parser-MIT.txt"
   ],
   "scripts": {
     "release:notes": "node scripts/release-notes.mjs",
@@ -92,7 +93,7 @@
     "mcp-catalog:generate": "node scripts/check-dependency-install.mjs && node scripts/run-exclusive.mjs artifacts turbo run artifacts:mcp-catalog",
     "mcp-catalog:check": "node scripts/check-dependency-install.mjs && node scripts/run-exclusive.mjs artifacts turbo run mcp-catalog:check:built",
     "prebuild": "npm run deps:check",
-    "build": "node scripts/run-exclusive.mjs artifacts turbo run artifacts:skills --force",
+    "build": "node api.js && node scripts/run-exclusive.mjs artifacts turbo run artifacts:skills --force",
     "precheck": "npm run deps:check",
     "check": "node scripts/run-exclusive.mjs artifacts turbo run typecheck lint format:check knip metadata:check && npm run verify:architecture-guards",
     "precheck:fast": "npm run deps:check",
@@ -115,7 +116,7 @@
     "knip": "knip",
     "jscpd": "jscpd src/ tests/",
     "scan:todos": "node scripts/scan-todos.mjs",
-    "start": "node scripts/rea.mjs mcp",
+    "start": "node api.js && node scripts/rea.mjs mcp",
     "test": "npm run test:with-build",
     "test:with-build": "npm run test:prepare && vitest run",
     "test:run": "vitest run",
